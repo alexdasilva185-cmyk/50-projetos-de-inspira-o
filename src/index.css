@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Poppins', system-ui, -apple-system, sans-serif;
+  --color-brand-white: #FFFFFF;
+  --color-brand-offwhite: #F8F7F3;
+  --color-brand-olive: #34483C;
+  --color-brand-deepgreen: #1F382D;
+  --color-brand-beige: #EDE8DE;
+  --color-brand-graphite: #252525;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  color: #252525;
+  background-color: #F8F7F3;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #252525;
+  background-color: #F8F7F3;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes marqueeInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-loop {
+  display: flex;
+  width: max-content;
+  animation: marqueeInfinite 48s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-loop:hover,
+.animate-marquee-paused {
+  animation-play-state: paused;
+}
+

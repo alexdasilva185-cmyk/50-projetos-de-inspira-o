@@ -1,0 +1,6 @@
+{
+  "name": "50 Projetos de Áreas Gourmet Pequenas",
+  "description": "Landing page de vendas de alta conversão para o produto digital 50 Projetos de Áreas Gourmet Pequenas por R$ 5,90.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
