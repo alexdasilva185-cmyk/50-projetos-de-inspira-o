@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { UrgencyHeader } from './components/UrgencyHeader';
 import { HeroSection } from './components/HeroSection';
-import { WhatYouGetSection } from './components/WhatYouGetSection';
 import { WhyChooseSection } from './components/WhyChooseSection';
 import { BonusSection } from './components/BonusSection';
 import { OfferSection } from './components/OfferSection';
@@ -9,13 +8,12 @@ import { TestimonialsSection } from './components/TestimonialsSection';
 import { GuaranteeSection } from './components/GuaranteeSection';
 import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
-import { CategoryDetailModal } from './components/CategoryDetailModal';
 import { SamplePreviewModal } from './components/SamplePreviewModal';
 import { ProductPreviewCarousel } from './components/ProductPreviewCarousel';
 import { BonusDetailModal } from './components/BonusDetailModal';
 import { CheckoutModal } from './components/CheckoutModal';
 import { LegalModal } from './components/LegalModals';
-import { LANDING_CONFIG, ProjectCategory, BonusItem, OfferPlan } from './config/landingConfig';
+import { LANDING_CONFIG, BonusItem, OfferPlan } from './config/landingConfig';
 import { useMidnightTimer } from './hooks/useMidnightTimer';
 
 export default function App() {
@@ -23,7 +21,6 @@ export default function App() {
   const timer = useMidnightTimer();
 
   // Modal states
-  const [selectedCategory, setSelectedCategory] = useState<ProjectCategory | null>(null);
   const [selectedBonus, setSelectedBonus] = useState<BonusItem | null>(null);
   const [sampleModalOpen, setSampleModalOpen] = useState(false);
   const [selectedSampleIndex, setSelectedSampleIndex] = useState(0);
@@ -82,12 +79,7 @@ export default function App() {
           onOpenCheckout={handleScrollToOffer}
         />
 
-        {/* 4. O Que Você Vai Receber (6 categorias) */}
-        <WhatYouGetSection
-          onSelectCategory={(cat) => setSelectedCategory(cat)}
-        />
-
-        {/* 5. Por Que Escolher Este Produto (4 cards + CTA secundário) */}
+        {/* 4. Por Que Escolher Este Produto (4 cards + CTA secundário) */}
         <WhyChooseSection onOpenCheckout={handleScrollToOffer} />
 
         {/* 6. Bônus Exclusivos (3 guias práticos) */}
@@ -119,11 +111,6 @@ export default function App() {
       />
 
       {/* Modals & Drawers */}
-      <CategoryDetailModal
-        category={selectedCategory}
-        onClose={() => setSelectedCategory(null)}
-        onOpenCheckout={handleScrollToOffer}
-      />
 
       <SamplePreviewModal
         isOpen={sampleModalOpen}

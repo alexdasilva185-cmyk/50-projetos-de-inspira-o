@@ -117,6 +117,19 @@ export const OfferSection: React.FC<OfferSectionProps> = ({
                   href={plan.checkoutUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => {
+                    try {
+                      if (typeof window !== 'undefined' && (window as any).fbq) {
+                        (window as any).fbq('track', 'InitiateCheckout', {
+                          content_name: plan.name,
+                          value: Number(plan.price.replace(',', '.')),
+                          currency: 'BRL',
+                        });
+                      }
+                    } catch (e) {
+                      // ignore tracking failure
+                    }
+                  }}
                   className={`w-full py-4 px-6 text-sm sm:text-base font-bold rounded-xl transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer group active:scale-[0.99] text-center ${
                     plan.isFeatured
                       ? 'bg-[#34483C] hover:bg-[#1F382D] text-white hover:shadow-lg'
