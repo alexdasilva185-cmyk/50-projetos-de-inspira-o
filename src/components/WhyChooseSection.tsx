@@ -8,7 +8,7 @@ interface WhyChooseSectionProps {
 
 export const WhyChooseSection: React.FC<WhyChooseSectionProps> = ({ onOpenCheckout }) => {
   return (
-    <section id="por-que-escolher" className="py-16 sm:py-24 bg-[#F8F7F3]">
+    <section id="por-que-escolher" className="py-16 sm:py-24 bg-[#F8F7F3] content-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

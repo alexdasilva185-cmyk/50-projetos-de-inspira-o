@@ -12,7 +12,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({
   onOpenCheckout,
 }) => {
   return (
-    <section id="oferta" className="py-12 sm:py-24 bg-[#1F382D] text-white relative overflow-hidden scroll-mt-14">
+    <section id="oferta" className="py-12 sm:py-24 bg-[#1F382D] text-white relative overflow-hidden scroll-mt-14 content-auto">
       {/* Decorative architectural grid background subtle texture */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         <div

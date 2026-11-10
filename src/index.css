@@ -40,10 +40,16 @@ body {
   width: max-content;
   animation: marqueeInfinite 48s linear infinite;
   will-change: transform;
+  transform: translateZ(0);
 }
 
 .animate-marquee-loop:hover,
 .animate-marquee-paused {
   animation-play-state: paused;
+}
+
+.content-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 600px;
 }
 

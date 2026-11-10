@@ -13,23 +13,40 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
+    </noscript>
 
-    <!-- Preload LCP Largest Contentful Paint Hero Mockup Image -->
-    <link rel="preload" as="image" href="/assets/opt/mockup_hero.webp" type="image/webp" fetchpriority="high" />
+    <!-- Preload LCP Largest Contentful Paint Hero Mockup Image (Responsive for Mobile and Desktop) -->
+    <link rel="preload" as="image" href="/assets/opt/mockup_hero_mobile.webp" type="image/webp" media="(max-width: 640px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/assets/opt/mockup_hero.webp" type="image/webp" media="(min-width: 641px)" fetchpriority="high" />
 
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code (Deferred for Fast Mobile FCP/LCP) -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1255852486497150');
-      fbq('track', 'PageView');
+      (function() {
+        function initMetaPixel() {
+          if (window._fbqInitialized) return;
+          window._fbqInitialized = true;
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '1255852486497150');
+          fbq('track', 'PageView');
+        }
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(initMetaPixel, { timeout: 1500 });
+        } else {
+          window.addEventListener('load', function() {
+            setTimeout(initMetaPixel, 300);
+          });
+        }
+      })();
     </script>
     <!-- End Meta Pixel Code -->
   </head>

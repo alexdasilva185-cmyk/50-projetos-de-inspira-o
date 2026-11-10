@@ -29,7 +29,7 @@ export const TestimonialsSection: React.FC = () => {
   };
 
   return (
-    <section id="depoimentos" className="py-12 sm:py-20 bg-[#FFFFFF] border-b border-[#EDE8DE] overflow-hidden">
+    <section id="depoimentos" className="py-12 sm:py-20 bg-[#FFFFFF] border-b border-[#EDE8DE] overflow-hidden content-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 sm:mb-10 text-center">
         
         {/* Section Header Badge */}

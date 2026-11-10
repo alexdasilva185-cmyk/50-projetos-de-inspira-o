@@ -48,17 +48,21 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             className="relative max-w-[270px] xs:max-w-[320px] sm:max-w-[420px] md:max-w-[500px] lg:max-w-[540px] group cursor-pointer transition-transform duration-500 hover:scale-[1.02] active:scale-[0.99]"
             title="Clique para folhear a amostra"
           >
-            <img
-              src={LANDING_CONFIG.MOCKUP_IMAGE}
-              alt="Mockup do Produto 50 Projetos de Áreas Gourmet Pequenas"
-              width={540}
-              height={675}
-              fetchPriority="high"
-              decoding="async"
-              className="w-full h-auto drop-shadow-2xl mx-auto"
-              loading="eager"
-              referrerPolicy="no-referrer"
-            />
+            <picture>
+              <source media="(max-width: 640px)" srcSet="/assets/opt/mockup_hero_mobile.webp" type="image/webp" />
+              <source srcSet="/assets/opt/mockup_hero.webp" type="image/webp" />
+              <img
+                src="/assets/opt/mockup_hero.webp"
+                alt="Mockup do Produto 50 Projetos de Áreas Gourmet Pequenas"
+                width={540}
+                height={675}
+                fetchPriority="high"
+                decoding="async"
+                className="w-full h-auto drop-shadow-2xl mx-auto"
+                loading="eager"
+                referrerPolicy="no-referrer"
+              />
+            </picture>
           </div>
         </div>
 
