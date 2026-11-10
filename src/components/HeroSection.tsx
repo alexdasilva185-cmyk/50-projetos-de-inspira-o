@@ -51,6 +51,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <img
               src={LANDING_CONFIG.MOCKUP_IMAGE}
               alt="Mockup do Produto 50 Projetos de Áreas Gourmet Pequenas"
+              width={540}
+              height={675}
+              fetchPriority="high"
+              decoding="async"
               className="w-full h-auto drop-shadow-2xl mx-auto"
               loading="eager"
               referrerPolicy="no-referrer"

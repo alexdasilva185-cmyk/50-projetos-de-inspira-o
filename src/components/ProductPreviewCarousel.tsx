@@ -65,6 +65,9 @@ export const ProductPreviewCarousel: React.FC<ProductPreviewCarouselProps> = ({
                     <img
                       src={page.image}
                       alt={page.title}
+                      width={310}
+                      height={413}
+                      decoding="async"
                       className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
                       loading="lazy"
                       referrerPolicy="no-referrer"

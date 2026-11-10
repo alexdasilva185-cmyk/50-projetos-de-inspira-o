@@ -8,13 +8,15 @@ import { TestimonialsSection } from './components/TestimonialsSection';
 import { GuaranteeSection } from './components/GuaranteeSection';
 import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
-import { SamplePreviewModal } from './components/SamplePreviewModal';
 import { ProductPreviewCarousel } from './components/ProductPreviewCarousel';
-import { BonusDetailModal } from './components/BonusDetailModal';
-import { CheckoutModal } from './components/CheckoutModal';
-import { LegalModal } from './components/LegalModals';
 import { LANDING_CONFIG, BonusItem, OfferPlan } from './config/landingConfig';
 import { useMidnightTimer } from './hooks/useMidnightTimer';
+
+// Lazy load modals to eliminate unused JS from initial network payload
+const SamplePreviewModal = React.lazy(() => import('./components/SamplePreviewModal').then(m => ({ default: m.SamplePreviewModal })));
+const BonusDetailModal = React.lazy(() => import('./components/BonusDetailModal').then(m => ({ default: m.BonusDetailModal })));
+const CheckoutModal = React.lazy(() => import('./components/CheckoutModal').then(m => ({ default: m.CheckoutModal })));
+const LegalModal = React.lazy(() => import('./components/LegalModals').then(m => ({ default: m.LegalModal })));
 
 export default function App() {
   // Dynamic midnight timer & date hook (auto-rolls over at 00:00)
@@ -110,32 +112,41 @@ export default function App() {
         onOpenTerms={() => setLegalModalType('terms')}
       />
 
-      {/* Modals & Drawers */}
+      {/* Modals & Drawers with Suspense code-splitting */}
+      <React.Suspense fallback={null}>
+        {sampleModalOpen && (
+          <SamplePreviewModal
+            isOpen={sampleModalOpen}
+            onClose={() => setSampleModalOpen(false)}
+            onOpenCheckout={handleScrollToOffer}
+            initialPageIndex={selectedSampleIndex}
+          />
+        )}
 
-      <SamplePreviewModal
-        isOpen={sampleModalOpen}
-        onClose={() => setSampleModalOpen(false)}
-        onOpenCheckout={handleScrollToOffer}
-        initialPageIndex={selectedSampleIndex}
-      />
+        {selectedBonus && (
+          <BonusDetailModal
+            bonus={selectedBonus}
+            onClose={() => setSelectedBonus(null)}
+            onOpenCheckout={handleScrollToOffer}
+          />
+        )}
 
-      <BonusDetailModal
-        bonus={selectedBonus}
-        onClose={() => setSelectedBonus(null)}
-        onOpenCheckout={handleScrollToOffer}
-      />
+        {checkoutModalOpen && (
+          <CheckoutModal
+            isOpen={checkoutModalOpen}
+            onClose={() => setCheckoutModalOpen(false)}
+            timer={timer}
+            initialPlanId={selectedPlanId}
+          />
+        )}
 
-      <CheckoutModal
-        isOpen={checkoutModalOpen}
-        onClose={() => setCheckoutModalOpen(false)}
-        timer={timer}
-        initialPlanId={selectedPlanId}
-      />
-
-      <LegalModal
-        type={legalModalType}
-        onClose={() => setLegalModalType(null)}
-      />
+        {legalModalType && (
+          <LegalModal
+            type={legalModalType}
+            onClose={() => setLegalModalType(null)}
+          />
+        )}
+      </React.Suspense>
     </div>
   );
 }

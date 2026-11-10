@@ -67,6 +67,9 @@ export const TestimonialsSection: React.FC = () => {
                   <img
                     src={item.image}
                     alt="Depoimento de leitor"
+                    width={290}
+                    height={460}
+                    decoding="async"
                     className="w-full h-auto object-contain max-h-[390px] sm:max-h-[460px] rounded-2xl transition-transform duration-300 group-hover:scale-[1.02]"
                     loading="lazy"
                     referrerPolicy="no-referrer"

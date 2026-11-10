@@ -68,7 +68,7 @@ export const BOOK_SAMPLE_PAGES: SamplePageItem[] = [
     pageNumber: 1,
     title: "Projeto 01 — Compacta e Moderna",
     subtitle: "Solução Linear para Quintais Estreitos",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__14_53_28-1_7dcdfb9c.png",
+    image: "/assets/opt/sample_page_1.webp",
     description: "Layout inteligente com bancada linear, churrasqueira embutida e otimização total de circulação.",
     badge: "PROJETO 01",
     category: "Áreas Compactas"
@@ -77,7 +77,7 @@ export const BOOK_SAMPLE_PAGES: SamplePageItem[] = [
     pageNumber: 2,
     title: "Projeto 02 — Rústica e Aconchegante",
     subtitle: "Tijolo Aparente & Madeira Maciça",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__14_53_29-2_40eb79e0.png",
+    image: "/assets/opt/sample_page_2.webp",
     description: "Atmosfera de casa de campo no quintal urbano com forno e materiais nobres de demolição.",
     badge: "PROJETO 02",
     category: "Estilo Rústico"
@@ -86,7 +86,7 @@ export const BOOK_SAMPLE_PAGES: SamplePageItem[] = [
     pageNumber: 3,
     title: "Projeto 03 — Pergolado & Jardim",
     subtitle: "Conforto Térmico & Biofilia Integrada",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__14_53_30-3_61c891bb.png",
+    image: "/assets/opt/sample_page_3.webp",
     description: "Estrutura de sombreamento natural com plantas suspensas, iluminação quente e piso drenante.",
     badge: "PROJETO 03",
     category: "Pergolados"
@@ -95,7 +95,7 @@ export const BOOK_SAMPLE_PAGES: SamplePageItem[] = [
     pageNumber: 4,
     title: "Projeto 04 — Bancada em L",
     subtitle: "Aproveitamento Máximo dos Cantos",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__14_53_31-4_5ddf642c.png",
+    image: "/assets/opt/sample_page_4.webp",
     description: "Configuração em L que separa área de cocção, pia e bancada de banquetas para receber amigos.",
     badge: "PROJETO 04",
     category: "Bancadas"
@@ -104,7 +104,7 @@ export const BOOK_SAMPLE_PAGES: SamplePageItem[] = [
     pageNumber: 5,
     title: "Projeto 05 — Ilha Compacta",
     subtitle: "Integração & Praticidade Central",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__14_53_31-5_6d0b078e.png",
+    image: "/assets/opt/sample_page_5.webp",
     description: "Bancada ilha multifuncional com espaço para banquetas e nicho para frigobar ou adega.",
     badge: "PROJETO 05",
     category: "Ilhas Gourmet"
@@ -113,7 +113,7 @@ export const BOOK_SAMPLE_PAGES: SamplePageItem[] = [
     pageNumber: 6,
     title: "Guia Prático — Planejamento Inteligente",
     subtitle: "Medidas Mínimas & Ergonomia",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__14_53_32-6_c05785eb.png",
+    image: "/assets/opt/sample_page_6.webp",
     description: "Distâncias ideais entre bancada, churrasqueira e mesa para circulação fluida sem aperto.",
     badge: "GUIA PRÁTICO",
     category: "Fundamentos Técnicos"
@@ -122,7 +122,7 @@ export const BOOK_SAMPLE_PAGES: SamplePageItem[] = [
     pageNumber: 7,
     title: "Guia Prático — Materiais e Acabamentos",
     subtitle: "Resistência ao Tempo, Calor e Chuva",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__14_53_33-7_cec8fe4a.png",
+    image: "/assets/opt/sample_page_7.webp",
     description: "Comparativo prático de pedras (granito vs quartzo), madeiras tratadas e revestimentos de fácil limpeza.",
     badge: "GUIA PRÁTICO",
     category: "Materiais"
@@ -131,7 +131,7 @@ export const BOOK_SAMPLE_PAGES: SamplePageItem[] = [
     pageNumber: 8,
     title: "Guia Prático — Layouts e Medidas",
     subtitle: "Plantas Esquemáticas Linear, L e Ilha",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__14_53_34-8_5df05432.png",
+    image: "/assets/opt/sample_page_8.webp",
     description: "Cotas detalhadas de 2,40m, 1,80m e 2,10m com zonas de preparo, apoio de bancada e circulação mínima.",
     badge: "GUIA PRÁTICO",
     category: "Plantas & Cotas"
@@ -140,7 +140,7 @@ export const BOOK_SAMPLE_PAGES: SamplePageItem[] = [
     pageNumber: 9,
     title: "Guia Prático — Decoração e Iluminação",
     subtitle: "Cenografia Noturna & Aconchego",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__14_53_34-9_cf8ceb38.png",
+    image: "/assets/opt/sample_page_9.webp",
     description: "Dicas de fitas LED 2700K embutidas, arandelas indiretas e objetos decorativos acolhedores.",
     badge: "GUIA PRÁTICO",
     category: "Iluminação"
@@ -149,7 +149,7 @@ export const BOOK_SAMPLE_PAGES: SamplePageItem[] = [
     pageNumber: 10,
     title: "Guia Prático — Erros Comuns e Soluções",
     subtitle: "Evite Gastar Dinheiro à Toa",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__14_53_35-10_d1cf7b1e.png",
+    image: "/assets/opt/sample_page_10.webp",
     description: "Os maiores erros cometidos em obras de áreas gourmet e como resolvê-los antes de colocar o primeiro tijolo.",
     badge: "GUIA PRÁTICO",
     category: "Checklist de Obra"
@@ -166,52 +166,52 @@ export const TESTIMONIAL_IMAGES: TestimonialImageItem[] = [
   {
     id: "1",
     name: "Camila Dourado",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__15_56_49-1_290dd763.png"
+    image: "/assets/opt/testimonial_1.webp"
   },
   {
     id: "2",
     name: "Felipe Barros",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__15_56_50-2_b9f99ea1.png"
+    image: "/assets/opt/testimonial_2.webp"
   },
   {
     id: "3",
     name: "Eduardo Siqueira",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__15_56_50-3_bd6531b6.png"
+    image: "/assets/opt/testimonial_3.webp"
   },
   {
     id: "4",
     name: "André Tavares",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__15_56_51-4_6764c989.png"
+    image: "/assets/opt/testimonial_4.webp"
   },
   {
     id: "5",
     name: "Patrícia Freitas",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__15_56_51-5_8767bc90.png"
+    image: "/assets/opt/testimonial_5.webp"
   },
   {
     id: "6",
     name: "Ricardo Nogueira",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__15_56_52-6_04d048d0.png"
+    image: "/assets/opt/testimonial_6.webp"
   },
   {
     id: "7",
     name: "Juliana Batista",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__15_56_52-7_81d41eed.png"
+    image: "/assets/opt/testimonial_7.webp"
   },
   {
     id: "8",
     name: "Fernanda Rocha",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__15_56_53-8_8b641eba.png"
+    image: "/assets/opt/testimonial_8.webp"
   },
   {
     id: "9",
     name: "Mariana Alves",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__15_56_54-9_bd848f0d.png"
+    image: "/assets/opt/testimonial_9.webp"
   },
   {
     id: "10",
     name: "Carlos Mendes",
-    image: "/assets/aistudio/Imagem_do_ChatGPT_9_de_nov._de_2026__15_56_54-10_d5e89389.png"
+    image: "/assets/opt/testimonial_10.webp"
   }
 ];
 
@@ -225,7 +225,7 @@ export const LANDING_CONFIG = {
   GUARANTEE_DAYS: 7,
 
   HERO_IMAGE: "/src/assets/images/hero_area_gourmet_1794242764326.jpg",
-  MOCKUP_IMAGE: "/assets/aistudio/Kit_Gourmet__Projetos_Pequenos_1524f2ae.png",
+  MOCKUP_IMAGE: "/assets/opt/mockup_hero.webp",
 
   HEADLINE: "Seu quintal pode se transformar na área gourmet que você sempre imaginou.",
   SUBHEADLINE:
@@ -327,7 +327,7 @@ export const LANDING_CONFIG = {
       badge: "BÔNUS INCLUSO",
       highlights: ["Mapeamento das medidas mínimas", "Relação de pontos de água, gás e luz", "Etapas de execução sem estresse"],
       pages: 24,
-      coverImage: "/assets/aistudio/Guia_de_Planejamento_da__rea_Gourmet-1_94602fdf.png"
+      coverImage: "/assets/opt/bonus_cover_1.webp"
     },
     {
       id: "bonus-2",
@@ -338,7 +338,7 @@ export const LANDING_CONFIG = {
       badge: "BÔNUS INCLUSO",
       highlights: ["Itens de infraestrutura e hidráulica", "Ergonomia de bancadas e grelhas", "Segurança térmica e de fumaça"],
       pages: 16,
-      coverImage: "/assets/aistudio/Checklist_da__rea_Gourmet_Ideal-2_25c6dfa3.png"
+      coverImage: "/assets/opt/bonus_cover_2.webp"
     },
     {
       id: "bonus-3",
@@ -349,7 +349,7 @@ export const LANDING_CONFIG = {
       badge: "BÔNUS INCLUSO",
       highlights: ["Combinações granito vs quartzo", "Madeiras indicadas para área externa", "Paletas de iluminação acolhedora"],
       pages: 32,
-      coverImage: "/assets/aistudio/Capa_Guia_de_Estilos_Gourmet-3_7ea0bfcc.png"
+      coverImage: "/assets/opt/bonus_cover_3.webp"
     }
   ] as BonusItem[],
 

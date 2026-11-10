@@ -42,6 +42,9 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onOpenCheckout, onPr
                   <img
                     src={bonus.coverImage}
                     alt={bonus.title}
+                    width={280}
+                    height={350}
+                    decoding="async"
                     className="max-h-[220px] sm:max-h-[280px] w-auto object-contain drop-shadow-xl transform group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                     referrerPolicy="no-referrer"
