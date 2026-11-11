@@ -90,7 +90,7 @@ export default function App() {
           onPreviewBonus={(bonus) => setSelectedBonus(bonus)}
         />
 
-        {/* 7. As Duas Ofertas: R$ 3,90 (Essencial) e R$ 17,90 (Completo) */}
+        {/* 7. As Duas Ofertas: R$ 3,90 (Plano Básico) e R$ 19,90 (Plano Completo) */}
         <OfferSection
           onOpenCheckout={handleOpenCheckout}
           timer={timer}

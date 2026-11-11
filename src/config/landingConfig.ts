@@ -358,7 +358,7 @@ export const LANDING_CONFIG = {
   OFFER_PLANS: [
     {
       id: "basic",
-      name: "Pacote Essencial",
+      name: "Plano Básico",
       subtitle: "Coleção Digital Principal",
       price: "3,90",
       checkoutUrl: "https://checkout.wcheckout.com.br/v1/cjskty6j",
@@ -371,14 +371,14 @@ export const LANDING_CONFIG = {
         "Acesso imediato no formato digital (PDF)",
         "Garantia incondicional de 7 dias"
       ],
-      cta: "QUERO O ESSENCIAL (R$ 3,90)",
+      cta: "Eu quero o Plano Básico",
       subtext: "Pagamento único • Sem mensalidade"
     },
     {
       id: "vip",
-      name: "Kit Completo + 3 Bônus",
+      name: "Plano Completo",
       subtitle: "A Experiência Definitiva de Reforma",
-      price: "17,90",
+      price: "19,90",
       checkoutUrl: "https://checkout.wcheckout.com.br/v1/xqznx0gk",
       badge: "MAIS ESCOLHIDO",
       isFeatured: true,
@@ -392,7 +392,7 @@ export const LANDING_CONFIG = {
         "Suporte prioritário via e-mail",
         "Garantia incondicional de 7 dias"
       ],
-      cta: "QUERO O KIT COMPLETO (R$ 17,90)",
+      cta: "Eu quero o Plano Completo",
       subtext: "Melhor custo-benefício • Acesso vitalício"
     }
   ] as OfferPlan[],
@@ -452,7 +452,7 @@ export const LANDING_CONFIG = {
     },
     {
       question: "6. O pagamento é mensal?",
-      answer: "Não. É uma compra única (a partir de R$ 3,90 no Pacote Essencial ou R$ 17,90 no Kit Completo com os 3 Bônus). Você paga uma única vez e o acesso ao material baixado é seu para sempre, sem mensalidades."
+      answer: "Não. É uma compra única (a partir de R$ 3,90 no Plano Básico ou R$ 19,90 no Plano Completo com os 3 Bônus). Você paga uma única vez e o acesso ao material baixado é seu para sempre, sem mensalidades."
     },
     {
       question: "7. Como vou receber o material?",

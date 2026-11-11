@@ -81,7 +81,7 @@ export const BonusDetailModal: React.FC<BonusDetailModalProps> = ({
             </div>
             <div className="flex-1 text-center sm:text-left">
               <div className="inline-block bg-[#EDE8DE] text-[#34483C] text-xs font-bold px-2.5 py-1 rounded-md mb-2">
-                {bonus.badge} • Exclusivo do Plano Completo (R$ 17,90)
+                {bonus.badge} • Exclusivo do Plano Completo (R$ 19,90)
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-[#1F382D] mb-2">
                 {bonus.title}
@@ -116,7 +116,7 @@ export const BonusDetailModal: React.FC<BonusDetailModalProps> = ({
         <div className="p-4 sm:p-5 border-t border-[#EDE8DE] bg-[#F8F7F3] flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-xs text-[#252525]/75 text-center sm:text-left">
             <span>Incluso no </span>
-            <strong className="text-[#1F382D] font-bold">Plano Completo por apenas R$ 17,90</strong>
+            <strong className="text-[#1F382D] font-bold">Plano Completo por apenas R$ 19,90</strong>
           </div>
           <button
             onClick={() => {
@@ -125,7 +125,7 @@ export const BonusDetailModal: React.FC<BonusDetailModalProps> = ({
             }}
             className="w-full sm:w-auto px-6 py-2.5 bg-[#34483C] hover:bg-[#1F382D] text-white text-xs sm:text-sm font-bold rounded-lg transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm"
           >
-            <span>QUERO O PLANO COMPLETO (R$ 17,90)</span>
+            <span>Eu quero o Plano Completo</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

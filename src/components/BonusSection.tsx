@@ -98,7 +98,7 @@ export const BonusSection: React.FC<BonusSectionProps> = ({ onOpenCheckout, onPr
         {/* Reassurance banner */}
         <div className="bg-[#EDE8DE]/60 border border-[#EDE8DE] rounded-2xl p-6 text-center max-w-2xl mx-auto shadow-xs">
           <p className="text-xs sm:text-sm text-[#252525]/85 font-normal">
-            <strong className="text-[#1F382D] font-bold">Exclusivo do Plano Completo:</strong> Os 3 guias bônus são disponibilizados exclusivamente na compra do <strong className="text-[#1F382D] font-bold">Plano Completo (R$ 17,90)</strong>, liberados no mesmo download com acesso imediato e vitalício.
+            <strong className="text-[#1F382D] font-bold">Exclusivo do Plano Completo:</strong> Os 3 guias bônus são disponibilizados exclusivamente na compra do <strong className="text-[#1F382D] font-bold">Plano Completo (R$ 19,90)</strong>, liberados no mesmo download com acesso imediato e vitalício.
           </p>
         </div>
 

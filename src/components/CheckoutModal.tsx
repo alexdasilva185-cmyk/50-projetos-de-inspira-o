@@ -107,7 +107,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                   }`}
                 >
                   <div className="flex items-center justify-between mb-1">
-                    <span className="text-xs font-bold text-[#1F382D]">Essencial</span>
+                    <span className="text-xs font-bold text-[#1F382D]">Plano Básico</span>
                     <span className="text-xs font-bold text-[#34483C]">R$ 3,90</span>
                   </div>
                   <span className="text-[11px] text-[#252525]/70 block leading-tight">
@@ -128,8 +128,8 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                     Mais Vendido
                   </span>
                   <div className="flex items-center justify-between mb-1">
-                    <span className="text-xs font-bold text-[#1F382D]">Kit Completo</span>
-                    <span className="text-xs font-bold text-[#1F382D]">R$ 17,90</span>
+                    <span className="text-xs font-bold text-[#1F382D]">Plano Completo</span>
+                    <span className="text-xs font-bold text-[#1F382D]">R$ 19,90</span>
                   </div>
                   <span className="text-[11px] text-[#252525]/70 block leading-tight">
                     Projetos + 3 Bônus
@@ -259,7 +259,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
 
             <div>
               <label className="text-xs font-bold text-[#1F382D] block mb-1">
-                URL do Pacote Essencial (R$ 3,90)
+                URL do Plano Básico (R$ 3,90)
               </label>
               <input
                 type="url"
@@ -273,7 +273,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
 
             <div>
               <label className="text-xs font-bold text-[#1F382D] block mb-1">
-                URL do Kit Completo + 3 Bônus (R$ 17,90)
+                URL do Plano Completo + 3 Bônus (R$ 19,90)
               </label>
               <input
                 type="url"
